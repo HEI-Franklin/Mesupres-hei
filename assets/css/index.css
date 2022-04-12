@@ -1,0 +1,312 @@
+main{
+	margin: auto;
+	text-align: center;
+	margin-top: 20px;  
+}
+
+.site_name{
+	margin: 0 5% 40px 5%;
+	font-size: 1.5rem;
+	color: var(--text-dark-color);
+}
+
+.site_name span{
+	font-size: 2.5rem; 
+	color: var(--yellow-color);
+}
+
+/*----------info---------*/
+
+.info{
+	margin: 0 5% 0 5%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between; 
+}
+
+/*---------slide_inner-----------*/
+
+.slide_inner{
+	flex-basis: 48%;
+}
+
+.slide_images{
+	width: 100%;
+	height: 400px;
+	position: relative;
+	box-shadow: 5px 5px 10px var(--box-shadow-color), -5px 5px 10px var(--box-shadow-color);
+}
+
+.slide_images img{
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	transition: opacity 1.1s ease-in-out;
+}
+
+.slide_images img.active_img{
+	opacity: 1;
+}
+
+.next_btn, .preview_btn{
+	font-size: 2.5rem;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	cursor: pointer; 
+}
+
+.next_btn:hover, .preview_btn:hover{
+	font-size: 3.5rem; 
+}
+
+.next_btn{
+	right: 1rem;
+	color: var(--green-drapeau-mg);
+}
+
+.preview_btn{
+	left: 1rem;
+	color: var(--red-drapeau-mg);
+}
+
+
+.info_text{
+	position: absolute;
+	width: 100%;
+	height: 80px;
+	top: 80%;
+	background-color: var(--bg_slide_text); 
+	color: var(--text-dark-color);
+	font-size: 1rem; 
+	font-weight: bold;
+}
+
+.info_text div{
+	position: absolute;
+	width: 95%;
+	height: 100%;
+	opacity: 0;
+	margin: auto;
+	text-align: justify;
+	top: 2%;
+	left: 1%;
+	right: 1%;
+	bottom: 1%;
+	overflow: hidden;
+	transition: opacity 1.1s ease-in-out;
+}
+
+.info_text div.active_text{
+	opacity: 1;
+}
+
+/*-------------section ministre_info------------------*/
+
+.ministre_info{
+	flex-basis: 40%;
+}
+
+.ministre_info_inner{
+	box-shadow: 5px 5px 10px var(--box-shadow-color), -5px 5px 10px var(--box-shadow-color);
+	width: 100%;
+	height: 400px;
+}
+
+.ministre_images{
+	position: relative;
+	width: 100%;
+	height: 320px;
+}
+
+.ministre_images img{
+	width: 100%;
+	height: 100%;
+}
+
+.image_hover{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: var(--image_hover_bg);
+	opacity: 0;
+	transition: opacity 0.5s; 
+}
+
+.image_hover:hover{
+	opacity: 1;
+}
+
+.link{
+	transform: translateY(50px);
+	transition: transform 0.5s;
+}
+
+.link a{
+	margin: 0 30px 0 30px;
+	font-size: 2.5rem;
+	color: var(--white);
+}
+
+.image_hover:hover .link{
+	transform: translateY(0);
+}
+
+.ministre_name_citation{
+	width: 100%;
+	height: 80px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center; 
+	align-items: center;
+	color: var(--text-dark-color);
+}
+
+.ministre_name{
+	font-size: 1.3rem; 
+	font-weight: bold; 
+}
+
+.ministre_citation{
+	opacity: 0.8;
+	font-family: 'Open Sans';
+}
+
+
+/*-------------section document------------------*/
+
+.document{
+	margin: 50px 5% 0 5%;
+	height: 692px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between; 
+}
+
+
+.left, .middle, .right{
+	flex-basis: 30%;
+	box-shadow: 5px 5px 10px var(--box-shadow-color), -5px 5px 10px var(--box-shadow-color);
+}
+
+.document .title{
+	width: 100%;
+	height: 60px;
+	margin-bottom: 8px;
+	background-color: var(--light);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-shadow: 2px 2px 5px var(--box-shadow-color);
+	color: var(--text-dark-color);
+	font-size: 1.2rem; 
+}
+
+.doc{
+	width: 98%;
+	height: 70px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around; 
+	align-items: center;
+	margin: auto;
+	margin-bottom: 8px;
+	box-shadow: 2px 2px 5px var(--box-shadow-color), -2px 2px 5px var(--box-shadow-color);
+}
+
+.file_logo{
+	flex-basis: 8%;
+	font-size: 2.5rem;
+	color: var(--red-drapeau-mg);
+}
+
+.doc_title{
+	flex-basis: 70%;
+	font-size: 0.9rem; 
+	text-align: left;
+}
+
+.action_icon{
+	flex-basis: 8%;
+	height: 90%;
+	font-size: 1.2rem;
+	color: var(--text-dark-color);
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between; 
+}
+
+.action_icon a{
+	color: var(--text-dark-color);
+}
+
+.open:hover, .down:hover{
+	font-size: 1.3rem;
+	color: var(--red-drapeau-mg);
+}
+
+
+/*-------------------------------------Media query----------------------------------------------*/
+
+
+/*----------------------------------------- min-width: 480px---------------------------------------*/
+
+@media (max-width: 480px) {
+	.info{
+		flex-direction: column;
+		justify-content: space-between; 
+	}
+
+	.ministre_info{
+		margin-top: 30px;  
+	}
+
+	.document{
+		height: 2180px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between; 
+	}
+}
+
+/*----------------------------------------- min-width: 481---------------------------------------*/
+
+
+@media (min-width: 481px) and (max-width: 768px) {
+	/*----------info---------*/
+
+	.info{
+		flex-direction: column;
+		justify-content: space-between; 
+	}
+
+	.ministre_info{
+		margin-top: 30px;  
+	}
+
+	.document{
+		margin: 100px 5% 0 5%;
+		height: 2180px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between; 
+	}
+
+}
+
+/*----------------------------------------- min-width: 769---------------------------------------*/
+
+@media (min-width: 769px) and (max-width: 1024px){
+	.ministre_info{
+		flex-basis: 48%;
+	}
+}

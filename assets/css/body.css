@@ -1,0 +1,44 @@
+@font-face {
+  font-family: "Open Sans";
+  font-display: block;
+  src: 	url("../webfonts/OpenSans-Light.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Open Sans bold";
+  font-display: block;
+  src: 	url("../webfonts/OpenSans-SemiBold.woff2") format("woff2");
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Open Sans bold";
+}
+
+:root{
+	--white: #ffffff;
+	--light: #f8f9fa;
+	--text-dark-color: #333;
+	--box-shadow-color: #33333361;
+	--input-inset-box-shadow-color: #0000001C;
+	--input-background-color: #17938A0f;
+	--text-separtor: #33333326;
+	--yellow-color: #B3711A;
+	--image_hover_bg: #00000080;
+	--bg_slide_text: #ffffff66;
+	--red-drapeau-mg: #FC3D32;
+	--green-drapeau-mg: #007E3A;
+	--facebook-color-code: #4267B2;
+	--linkedin-color-code: #0072B1; 
+	--twitter-color-code: #1DA1F2;
+}
+
+body{
+	background-color: var(--light);
+}
+
+main{
+		max-width: 1650px;
+}

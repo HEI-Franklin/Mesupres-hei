@@ -1,0 +1,111 @@
+#main_wrapper{
+	text-align: center;
+	margin-top: 20px; 
+}
+
+#main_wrapper h1{
+	color: var(--text-dark-color);
+	font-size: 2rem;
+}
+
+/*-------------------------------------------*/
+
+.document{
+	margin: 50px 5% 0 5%;
+	height: 595px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between; 
+}
+
+
+.left, .right{
+	flex-basis: 48%;
+	box-shadow: 5px 5px 10px var(--box-shadow-color), -5px 5px 10px var(--box-shadow-color);
+}
+
+.document .title{
+	width: 100%;
+	height: 60px;
+	margin-bottom: 8px;
+	background-color: var(--light);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-shadow: 2px 2px 5px var(--box-shadow-color);
+	color: var(--text-dark-color);
+	font-size: 1.2rem; 
+}
+
+.doc{
+	width: 98%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around; 
+	align-items: center;
+	margin: auto;
+	margin-bottom: 8px;
+	box-shadow: 2px 2px 5px var(--box-shadow-color), -2px 2px 5px var(--box-shadow-color);
+}
+
+.left .doc{
+	height: 123.3px;
+}
+
+.right .doc{
+	height: 97.3px;
+}
+
+.file_logo{
+	flex-basis: 5%;
+}
+
+.doc_title{
+	flex-basis: 80%;
+	text-align: left;
+}
+
+.doc_title .acronyme{
+	text-decoration: none;
+	color: var(--yellow-color);
+	font-size: 1.2rem;
+}
+
+.doc_title .acro_text{
+	text-decoration: none;
+	color: var(--text-dark-color);
+	font-size: 0.9rem;
+	font-family: 'Open Sans';
+}
+
+
+/*----------------------------------------- min-width: 480px---------------------------------------*/
+
+@media (max-width: 480px) {
+	.document{
+		height: 1470px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between; 
+	}
+
+
+	.right .doc{
+		height: 143.3px;
+	}
+}
+
+/*----------------------------------------- min-width: 481---------------------------------------*/
+
+
+@media (min-width: 481px) and (max-width: 768px) {
+
+	.document{
+		margin: 100px 5% 0 5%;
+		height: 1240px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between; 
+	}
+
+}

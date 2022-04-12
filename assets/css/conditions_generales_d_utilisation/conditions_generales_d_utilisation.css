@@ -1,0 +1,14 @@
+#main_wrapper{
+	margin-top: 20px; 
+	text-align: center;
+}
+
+#main_wrapper img{
+	width: 80%;
+	height: auto;
+}
+
+#main_wrapper h1{
+	color: var(--text-dark-color);
+	font-size: 8vw;
+}
