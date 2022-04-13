@@ -46,15 +46,39 @@ main{
     text-align: left;
 }
 
-.text_containt p{
-    width: 96%;
-    font-size: 0.9rem;
-    font-family: 'Open sans';
-    color: var(--text-dark-color);
-    margin-bottom: 5px; 
-    margin-left: 10px;
+.text_containt img{
+    width: 98%;
+    height: auto;
+    margin: auto;
 }
 
+.text_containt .acro{
+    width: 98%;
+    margin: auto; 
+}
+
+.acro .title{
+    color: var(--text-dark-color);
+}
+
+.acro span{
+    color: var(--yellow-color);
+}
+
+.acro p{
+    color: var(--text-dark-color);
+    font-family: 'Open Sans';
+}
+
+.content_1{
+    height: 840px !important;
+    text-align: left !important;
+    box-shadow: 2px 2px 5px var(--box-shadow-color), -2px 2px 5px var(--box-shadow-color) !important;
+}
+
+.nouvelles{
+    box-shadow: none !important;
+}
 
 /*--------------------------------Medie query-------------------------------*/
 
@@ -72,7 +96,7 @@ main{
         margin-top: 20px; 
     }
 
-    .content_1, .content_2, .content_3{
+    .content_1{
         height: 463px;
     }
 
@@ -96,7 +120,7 @@ main{
         margin-top: 20px; 
     }
 
-    .content_1, .content_2, .content_3{
+    .content_1{
         height: 600px;
     }
     .content{

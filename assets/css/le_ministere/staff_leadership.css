@@ -1,0 +1,195 @@
+main{
+    margin: auto;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#main_wrapper h1{
+    color: var(--text-dark-color);
+    font-size: 2rem;
+}
+
+
+#main_wrapper .staff{
+    margin: 50px 5% 0 5%;
+}
+/*----------------------------------------------------*/
+
+#main_wrapper .staff_title{
+    width: 100%;
+    height: 60px;
+    margin-bottom: 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+    align-items: center;
+    background-color: var(--white);
+    box-shadow: 2px 2px 5px var(--box-shadow-color);
+}
+
+.staff_title p{
+    font-size: 1.2rem;
+    color: var(--text-dark-color);
+}
+
+#main_wrapper .staff_content{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+}
+
+.ministre{
+    width: 70%;
+    max-height: 520px;
+    position: relative;
+    margin: auto; 
+}
+
+.ministre img{
+    width: 100%;
+    height: auto;
+    box-shadow: 5px 5px 10px var(--box-shadow-color), -5px 5px 10px var(--box-shadow-color);
+}
+
+.ministre .text{
+    width: 100%;
+    height: 100%;
+    background-color: var(--staff-img-bg);
+    position: absolute;
+    top: 0;
+    color: var(--text-dark-color);
+    opacity: 0;
+    transform: scale(0.1);
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+.ministre:hover .text{
+    opacity: 1;
+    transform: scale(1);
+}
+
+.ministre .name{
+    color: var(--red-drapeau-mg);
+    font-size: 1.5rem; 
+    margin-top: 20px; 
+    margin-bottom: 10px;  
+}
+
+.ministre .job{
+    color: var(--yellow-color);
+    margin-bottom: 20px;  
+}
+
+/*---------------------Equipe--------------------------*/
+
+.equipe{
+    margin-top: 50px; 
+    display: flex;
+    flex-direction: column;
+}
+
+.equipe_1, .equipe_2, .equipe_3, .equipe_4{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    width: 100%;
+    height: 300px;
+}
+
+.p_1, .p_2, .p_3, .p_4{
+    width: 290px; 
+    height: 290px;
+    box-shadow: 5px 5px 10px var(--box-shadow-color), -5px 5px 10px var(--box-shadow-color);
+    position: relative;
+    margin: 20px 0;
+}
+
+.equipe img{
+    width: 100%;
+    height: 100%;
+}
+
+.equipe .text{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background-color: var(--staff-img-bg);
+    color: var(--text-dark-color);
+    opacity: 0;
+    transform: scale(0.1);
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+.p_1:hover .text, .p_2:hover .text, .p_3:hover .text, .p_4:hover .text{
+    opacity: 1;
+    transform: scale(1);
+}
+
+.text .name{
+    color: var(--red-drapeau-mg);
+    font-size: 1.1rem; 
+    margin-top: 20px; 
+    margin-bottom: 10px;  
+}
+
+.text .job{
+    color: var(--yellow-color);
+    margin-bottom: 20px;  
+}
+
+/*---------------------staff-link-----------------*/
+
+.staff_link .link{
+    margin: 2px 0;
+}
+
+.link a{
+    color: var(--text-dark-color);
+}
+
+/*-------------------------------Media query-----------------------*/
+
+/*----------------------------------------- min-width: 480px---------------------------------------*/
+
+@media (max-width: 480px) {
+
+    .ministre{
+        width: 94.6%;
+        height: 200px;
+        overflow-y: auto;
+    }
+
+    .equipe_1, .equipe_2, .equipe_3, .equipe_4{
+        flex-direction: column;
+        align-items: center;
+        height: 1320px;
+    }
+}
+
+/*----------------------------------------- min-width: 481---------------------------------------*/
+
+
+@media (min-width: 481px) and (max-width: 768px) {
+
+    .ministre{
+        width: 94.6%;
+        height: 400px;
+        overflow-y: auto;
+    }
+
+    .equipe_1, .equipe_2, .equipe_3, .equipe_4{
+        flex-direction: column;
+        align-items: center;
+        height: 1320px;
+    }
+
+}
+
+/*----------------------------------------- min-width: 769---------------------------------------*/
+
+@media (min-width: 769px) and (max-width: 1024px){
+
+}
