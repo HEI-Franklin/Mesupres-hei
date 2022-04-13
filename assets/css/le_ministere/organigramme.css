@@ -20,85 +20,39 @@ main{
 .information{
     flex-basis: 60%;
     height: auto;
-    margin-bottom: 50px; 
-}
-
-.ministre_info_inner{
     box-shadow: 5px 5px 10px var(--box-shadow-color), -5px 5px 10px var(--box-shadow-color);
-    width: 100%;
-    height: 582px;
 }
 
-.ministre_images{
-    position: relative;
+.text_head{
     width: 100%;
-    height: 445px;
-}
-
-.ministre_images img{
-    width: 100%;
-    height: 100%;
-}
-
-.image_hover{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    height: 60px;
+    margin-bottom: 8px;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    background: var(--image_hover_bg);
-    opacity: 0;
-    transition: opacity 0.5s; 
-}
-
-.image_hover:hover{
-    opacity: 1;
-}
-
-.link{
-    transform: translateY(50px);
-    transition: transform 0.5s;
-}
-
-.link a{
-    margin: 0 30px 0 30px;
-    font-size: 2.5rem;
-    color: var(--white);
-}
-
-.image_hover:hover .link{
-    transform: translateY(0);
-}
-
-.ministre_name_citation{
-    width: 100%;
-    height: 134px;
-    display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center; 
     align-items: center;
+    background-color: var(--white);
+    box-shadow: 2px 2px 5px var(--box-shadow-color);
+}
+
+.text_head p{
+    font-size: 1.2rem;
     color: var(--text-dark-color);
 }
 
-.ministre_name{
-    font-size: 1.3rem; 
-    font-weight: bold; 
+.text_containt{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
 }
 
-.ministre_citation{
-    opacity: 0.8;
-    font-family: 'Open Sans';
-}
-
-.m_titre{
-    color: var(--yellow-color);
-}
-
-.m_date, .m_text{
-    font-family: 'Open Sans';
+.text_containt p{
+    width: 96%;
+    font-size: 0.9rem;
+    font-family: 'Open sans';
+    color: var(--text-dark-color);
+    margin-bottom: 5px; 
+    margin-left: 10px;
 }
 
 
@@ -114,20 +68,17 @@ main{
         justify-content: space-between;
     }
 
-    .ministre_images {
-        height: 300px;
+    .nouvelles{
+        margin-top: 20px; 
     }
 
-    .ministre_info_inner {
-        height: 480px;
+    .content_1, .content_2, .content_3{
+        height: 463px;
     }
 
-    .ministre_name_citation {
-        height: 170px;
+    .content{
+        height: 1360px;
     }
-
-
-
 }
 
 /*----------------------------------------- min-width: 481---------------------------------------*/
@@ -141,11 +92,20 @@ main{
         justify-content: space-between;
     }
 
+    .nouvelles{
+        margin-top: 20px; 
+    }
 
+    .content_1, .content_2, .content_3{
+        height: 600px;
+    }
+    .content{
+        height: 1820px;
+    }
 }
 
 /*----------------------------------------- min-width: 769---------------------------------------*/
 
 @media (min-width: 769px) and (max-width: 1024px){
 
-},
+}

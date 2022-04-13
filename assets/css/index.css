@@ -84,6 +84,7 @@ main{
 	color: var(--text-dark-color);
 	font-size: 1rem; 
 	font-weight: bold;
+    cursor: pointer;
 }
 
 .info_text div{
@@ -103,6 +104,25 @@ main{
 
 .info_text div.active_text{
 	opacity: 1;
+}
+
+.info_text a{
+    text-decoration: none;
+    font-size: 0.8rem;
+    color: var(--text-dark-color);
+    font-family: 'Open Sans';
+}
+
+.info_text a .title{
+	font-size: 0.9rem;
+	font-family: 'Open Sans bold';
+	color: var(--yellow-color);
+}
+
+
+.info_text .date{
+    display: block;
+    color: var(--red-drapeau-mg);
 }
 
 /*-------------section ministre_info------------------*/
