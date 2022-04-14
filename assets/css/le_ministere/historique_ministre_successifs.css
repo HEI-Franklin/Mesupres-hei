@@ -40,46 +40,38 @@ main{
     justify-content: space-between; 
 }
 
-.ministre{
-    width: 70%;
-    max-height: 520px;
+.history{
+    width: 100%;
+    max-height: 950px;
     position: relative;
     margin: auto; 
+    overflow-y: hidden;
+    text-align: left;
 }
 
-.ministre img{
+.history img{
     width: 100%;
     height: auto;
     box-shadow: 5px 5px 10px var(--box-shadow-color), -5px 5px 10px var(--box-shadow-color);
+    position: sticky;
+    top: 0;
 }
 
-.ministre .text{
+.history .text{
     width: 100%;
     height: 100%;
     background-color: var(--staff-img-bg);
     position: absolute;
     top: 0;
     color: var(--text-dark-color);
-    opacity: 0;
-    transform: scale(0.1);
-    transition: opacity 0.5s, transform 0.5s;
 }
 
-.ministre:hover .text{
-    opacity: 1;
-    transform: scale(1);
-}
 
-.ministre .name{
+.history .name{
     color: var(--red-drapeau-mg);
     font-size: 1.5rem; 
     margin-top: 20px; 
     margin-bottom: 10px;  
-}
-
-.ministre .job{
-    color: var(--yellow-color);
-    margin-bottom: 20px;  
 }
 
 /*---------------------Equipe--------------------------*/
@@ -140,17 +132,31 @@ main{
     margin-bottom: 20px;  
 }
 
-/*---------------------staff-link-----------------*/
 
 .staff_link{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between; 
+    width: 30%;
+    height: 40px;
+    margin: auto;
     margin-top: 50px;
 }
 
 .staff_link .link{
+    width: 40px;
+    height: 40px;
     margin: 2px 0;
+    box-shadow: 2px 2px 5px var(--box-shadow-color), -2px 2px 5px var(--box-shadow-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
 .link a{
+    text-decoration: none;
     color: var(--text-dark-color);
 }
 
@@ -160,7 +166,7 @@ main{
 
 @media (max-width: 480px) {
 
-    .ministre{
+    .history{
         width: 94.6%;
         height: 200px;
         overflow-y: auto;
@@ -178,7 +184,7 @@ main{
 
 @media (min-width: 481px) and (max-width: 768px) {
 
-    .ministre{
+    .history{
         width: 94.6%;
         height: 400px;
         overflow-y: auto;
