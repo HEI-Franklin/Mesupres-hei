@@ -18,10 +18,107 @@ main{
 
 /*---------------------------------------------------------*/
 
+.information{
+    flex-basis: 50%;
+}
+
+.information video{
+    width: 100%;
+    height: auto;
+}
+
 .video_like{
-    flex-basis: 30%;
+    flex-basis: 35%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: :center;
+}
+
+.next_video{
+    margin-bottom: 50px; 
+}
+
+.information p{
+    color: var(--text-dark-color);
+}
+
+.information .v_title{
+    font-size: 1.3rem;
+    color: var(--yellow-color);
+}
+
+.next_video p{
+    color: var(--text-dark-color);
+}
+
+.next_video .v_title{
+    font-size: 1.2rem;
+    color: var(--yellow-color);
+}
+
+.next_video img{
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+
+.next{
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    justify-content: space-around; 
+}
+
+.next a{
+    text-decoration: none;
+    color: var(--text-dark-color);
+}
+
+.num{
+    margin-bottom: 50px; 
+}
+
+.next .num a{
+    font-size: 2rem;
+    margin: 0 10px;
+}
+
+.next i{
+    font-size: 2.5rem; 
+}
+
+.next i:hover{
+    transform: scale(1.2);
+}
+
+
+
+/*-------------------------------Medeia Query------------*/
+
+
+@media (max-width: 480px) {
+    #main_wrapper .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
+
+/*----------------------------------------- min-width: 481---------------------------------------*/
+
+
+@media (min-width: 481px) and (max-width: 768px) {
+
+    #main_wrapper .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
+
+/*----------------------------------------- min-width: 769---------------------------------------*/
+
+@media (min-width: 769px) and (max-width: 1024px){
+
 }

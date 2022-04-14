@@ -70,6 +70,10 @@ main{
     font-size: 5rem; 
 }
 
+.next i:hover{
+    transform: scale(1.2);
+}
+
 audio::-webkit-media-controls-panel {
   background-color: var(--text-dark-color);
 }
